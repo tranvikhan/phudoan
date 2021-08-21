@@ -1,3 +1,12 @@
-.title {
-  @apply w-full text-center text-5xl font-bold py-4;
+.main {
+  @apply flex flex-col justify-center items-center w-screen h-screen space-y-4;
+  .title {
+    @apply text-center text-5xl font-bold py-4 text-primary;
+  }
+  .title1 {
+    @apply text-center text-5xl font-bold py-4 text-accent;
+  }
+  .link {
+    @apply text-text hover:text-accent text-2xl;
+  }
 }

@@ -11,7 +11,7 @@ export const getStaticProps = async ({ locale }: any) => ({
   },
 });
 
-const Home: NextPage = () => {
+const Demo: NextPage = () => {
   const { t } = useTranslation("home");
   return (
     <div>
@@ -20,13 +20,13 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>
           <Link href="/">{t("title")}</Link>
         </h1>
-        <div className={styles.link}>
-          <Link href="/demo">Go to next Page</Link>
-        </div>
+        <h1 className={styles.title1}>
+          <Link href="/demo">{t("demo")}</Link>
+        </h1>
       </main>
       {/*  <footer className={styles.footer}>Khan</footer> */}
     </div>
   );
 };
 
-export default Home;
+export default Demo;
