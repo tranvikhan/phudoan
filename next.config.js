@@ -1,9 +1,11 @@
 const { i18n } = require("./next-i18next.config");
 module.exports = {
   i18n,
+  webpack5: true,
   env: {
     BASE_URL: "https://phudoangroup.com",
-    WEB_LOGO: "https://phudoangroup.com/assets/img/Logo.png",
+    WEB_LOGO: "https://phudoangroup.com/assets/icon/Logo.png",
+    SITE_ICON: "https://phudoangroup.com/assets/icon/favicon.ico",
     DEFAULT_LOCALE: "vi_VN",
     DEFAULT_KEY_WORDS:
       "PHÚ ĐOÀN, HÀNG HẢI, DỊCH VỤ CẢNG BIỂN, TRƯỜNG GIANG PHÚ MỸ, VŨNG TÀU, DỊCH VỤ VẬN TẢI",

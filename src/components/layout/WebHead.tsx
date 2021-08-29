@@ -13,6 +13,12 @@ const WebHead = (props: IProps) => {
       <title>{props.title || process.env.DEFAULT_SITE_NAME}</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta charSet="UTF-8" />
+      <link
+        rel="icon"
+        href={process.env.SITE_ICON}
+        sizes="any"
+        type="image/ico"
+      />
       <meta property="og:locale" content={process.env.DEFAULT_LOCALE}></meta>
       <meta
         name="description"
