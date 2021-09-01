@@ -4,5 +4,53 @@
   "author": "PHU DOAN TRADING SERVICES CO., LTD.",
   "siteName": "Phu Doan Group",
   "defaultSiteTitle": "PHU DOAN TRADING SERVICES CO., LTD.",
-  "defaultSiteDescription": "Professional, dedicated, reliable and efficient. Together with Customers Towards the Most Effective Logistics Service Chain"
+  "defaultSiteDescription": "Professional, dedicated, reliable and efficient. Together with Customers Towards the Most Effective Logistics Service Chain",
+  "subHeader": {
+    "siteName": "PHU DOAN TRADING SERVICES COMPANY",
+    "email": "phudoanco@scgroup.com.vn",
+    "place": "Ba Ria - Vung Tau"
+  },
+  "header": {
+    "logoName": "PHÚ ĐOÀN",
+    "navigation": {
+      "item1": "About us",
+      "item2": "Services",
+      "item3": "facilities"
+    },
+    "contact": {
+      "header": "Contact us",
+      "phoneNumber": "0909.191.494"
+    }
+  },
+  "footer": {
+    "siteName": "PHU DOAN TRADING SERVICES \rCOMPANY",
+    "address": "Adresss: Group 16, KP. My Thanh, My Xuan Ward, Phu My Town, Ba Ria-Vung Tau Province.",
+    "phone": "Phone: 0909.191.494",
+    "email": "Email: phudoanco@scgroup.com.vn",
+    "copyRight": "Copyright: © PHU DOAN TRADING SERVICES CO., LTD. All rights reserved.",
+    "menu1": {
+      "header": "ABOUT US",
+      "item1": "Introduction",
+      "item2": "Leaders",
+      "item3": "Featured projects",
+      "item4": "Training and Activities",
+      "item5": "Partners"
+    },
+    "menu2": {
+      "header": "SERVICES",
+      "item1": "Seaport",
+      "item2": "Carriage",
+      "item3": "Logistics",
+      "item4": "Warehouse",
+      "item5": "Human Resources"
+    },
+    "menu3": {
+      "header": "Resources",
+      "item1": "Equipments",
+      "item2": "Cranes",
+      "item3": "Forklifts",
+      "item4": "Tractors",
+      "item5": "Equipment Certification"
+    }
+  }
 }

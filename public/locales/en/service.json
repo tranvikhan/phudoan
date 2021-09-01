@@ -1,0 +1,50 @@
+{
+  "head": {
+    "title": "Services",
+    "description": "Services - Phu Doan Trading Services Company"
+  },
+  "heading": "Services",
+  "section1": {
+    "card1": {
+      "heading": "Reasonable cost and effective",
+      "paragraph": "We provide services at the most reasonable cost to ensure benefits for customers."
+    },
+    "card2": {
+      "heading": "Provide variety of services",
+      "paragraph": "We always understand the needs of our customers to proactively build diverse and flexible services."
+    },
+    "card3": {
+      "heading": "High responsibility to customers",
+      "paragraph": "We are always committed to providing the best quality service to our customers."
+    },
+    "card4": {
+      "heading": "Quick project execution time",
+      "paragraph": "We focus on registering ports and exploiting goods for customers on schedule."
+    }
+  },
+
+  "section2": {
+    "subHeading": "SERVICES",
+    "heading": "Constantly innovating and improving the service quality.",
+    "paragraph1": "Always improve the application of science and technology on technological processes Exploiting and loading and unloading all kinds of goods, especially overloaded and oversized goods for works.",
+    "paragraph2": "Responding to the increasing needs of partners, along to strive to become a strong company in the field of marine operations support services."
+  },
+  "section3": "Seaport service",
+  "section4": "Carriage service",
+  "section5": "Warehouse service",
+  "section6": "Logistics service",
+  "section7": "Human Resources",
+  "section8": {
+    "heading": "Project implementation activities",
+    "grid": {
+      "item1": "Packing and tying in containers",
+      "item2": "Tie rows of Iron-shaped, Iron-trees in the hold of the ship.",
+      "item3": "Cargo lashing Wind tower ducts in the hold & deck",
+      "item4": "Fastening of oil and gas pipes in the hold & deck",
+      "item5": "Fastening of coiled corrugated iron",
+      "item6": "Fastening of all kinds of pipes and concrete piles",
+      "item7": "Agricultural products, bags and goods",
+      "item8": "Container goods, scrap, equipment"
+    }
+  }
+}

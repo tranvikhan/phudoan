@@ -1,0 +1,79 @@
+{
+  "head": {
+    "title": "About Us",
+    "description": "About Us - Phu Doan Trading Services Company"
+  },
+  "heading": "Introduction",
+  "section1": {
+    "badge": "Orientation to develop a professional and sustainable Logistics service"
+  },
+  "section2": {
+    "subHeading": "About us",
+    "heading": "A company with a wealth of experience with creativity and enthusiasm",
+    "paragraph1": "Established on January 20, 2020, PHU DOAN TRADING SERVICES CO., LTD officially went into operation and developed with a young team, graduated with a Master's degree, specialized engineers: Seaport operation, shipping economy… has rich experience with creativity and enthusiasm in many fields. ",
+    "paragraph2": "Up to now, the company has established a close relationship, trust, and long-term cooperation with many Agents, Shippers, Seaport service systems in Cai Mep - Thi Vai area, Ba Ria province - Vung Tau. With the orientation of developing a professional and sustainable Logistics service, The Company, along with a member company, TRUONG GIANG PHU MY CO., LTD always improve and apply science and technology in technological processes Exploiting and loading and unloading all kinds of goods, especially overloaded and oversized goods for works in Ba Ria - Vung Tau province. ",
+    "paragraph3": "With professional development orientation, the company constantly innovates, optimizes, and improves quality service quality, in line with the increasing needs of partners, along with the goal of striving to become a strong company in the field of maritime support services. Focus on exploiting main services related to loading and unloading of general cargo, super-long and super-heavy cargo according to the plan: Ship - Vehicle, Vehicle - yard and vice versa, heavy industrial plants, road transport - navigation, cargo mooring, tally, provision of seaport and ship services. ",
+    "card1": "Truong Gian Phu My Company",
+    "card2": "Son Loc Phat Company",
+    "card3": "Quality certification"
+  },
+  "section3": {
+    "subHeading": "Leaders",
+    "heading": "Always learning for professional development",
+    "leader1": {
+      "name": "M.S NGUYEN QUOC TUAN",
+      "position": "President"
+    },
+    "leader2": {
+      "name": "K.S LE HOANG TAM",
+      "position": "Vice president of technical"
+    },
+    "leader3": {
+      "name": "K.S NGUYEN VAN DANG",
+      "position": "Vice president of business"
+    },
+    "leader4": {
+      "name": "NGUYEN XUAN DIEU",
+      "position": "Vice President of Finance"
+    },
+    "leader5": {
+      "name": "NGUYEN THI THU HA",
+      "position": "General Administration Manager"
+    },
+    "leader6": {
+      "name": "PHAM VAN THUAN",
+      "position": "Sale Manager"
+    },
+    "leader7": {
+      "name": "NGUYEN HOANH MINH",
+      "position": "Project Exploitation Manager"
+    },
+    "leader8": {
+      "name": "NGUYEN THANH TAI",
+      "position": "Mechanical Manager"
+    }
+  },
+  "section4": {
+    "heading": "Featured Projects",
+    "grid": {
+      "item1": "Long Son - Ba Ria - Vung Tau Refinery and Petrochemical Project",
+      "item2": "Phu Quoc sea tourism exploitation project - An Thoi port",
+      "item3": "Wind Power Exploitation and Unloading Project at Long An International Scene",
+      "item4": "PVcoating Factory Gas Pipeline Warehouse Project",
+      "item5": "Operating the coal Hopper hopper, at Phu My inland waterway port",
+      "item6": "PVcoating Factory Gas Pipeline Warehouse Project"
+    }
+  },
+  "section5": {
+    "heading": "Trainning and Team Building",
+    "grid": {
+      "item1": "Occupational safety training in the process of loading and unloading goods",
+      "item2": "Training professional and professional capacity",
+      "item3": "Periodic meetings, Deployment of action plans",
+      "item4": "Team building games on the beach"
+    }
+  },
+  "section6": {
+    "heading": "Trusted by partners"
+  }
+}

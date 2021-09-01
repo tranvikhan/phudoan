@@ -4,7 +4,11 @@ const ContactItem = ({ href, icon, text, size = "large" }: any) => {
   const iconSize = size === "small" ? 14 : 20;
   return (
     <Link href={href}>
-      <div className="cursor-pointer text-gray-100 flex items-center space-x-1 hover:text-white transition duration-300 ease-in-out">
+      <div
+        className={`cursor-pointer text-gray-100 flex  space-x-1 hover:text-opacity-50 transition duration-300 ease-in-out ${
+          size === "small" ? "items-center" : "items-start"
+        }`}
+      >
         {icon ? (
           <Image src={icon} alt={text} width={iconSize} height={iconSize} />
         ) : null}

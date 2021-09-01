@@ -4,5 +4,53 @@
   "author": "Công ty TNHH Thương mại Dịch Vụ Phú Đoàn",
   "siteName": "Phú Đoàn Group",
   "defaultSiteTitle": "Công ty TNHH Thương mại Dịch Vụ Phú Đoàn",
-  "defaultSiteDescription": "Chuyên nghiệp, tận tâm, tin cậy và hiệu quả. Cùng Khách Hàng Hướng Tới Chuỗi Dịch Vụ Logistics Hiệu Quả Nhất"
+  "defaultSiteDescription": "Chuyên nghiệp, tận tâm, tin cậy và hiệu quả. Cùng Khách Hàng Hướng Tới Chuỗi Dịch Vụ Logistics Hiệu Quả Nhất",
+  "subHeader": {
+    "siteName": "CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ PHÚ ĐOÀN",
+    "email": "phudoanco@scgroup.com",
+    "place": "Bà Rịa - Vũng Tàu"
+  },
+  "header": {
+    "logoName": "PHÚ ĐOÀN",
+    "navigation": {
+      "item1": "Giới thiệu",
+      "item2": "Dịch vụ",
+      "item3": "Trang thiết bị"
+    },
+    "contact": {
+      "header": "Liên hệ để hợp tác",
+      "phoneNumber": "0909.191.494"
+    }
+  },
+  "footer": {
+    "siteName": "CÔNG TY TNHH THƯƠNG MẠI\nDỊCH VỤ PHÚ ĐOÀN",
+    "address": "Trụ sở: Tổ 16, KP. Mỹ Thạnh, Phường Mỹ Xuân, Thị Xã Phú Mỹ, Tỉnh Bà Rịa-Vũng tàu.",
+    "phone": "Số điện thoại: 0909.191.494",
+    "email": "Email: phudoanco@scgroup.com",
+    "copyRight": "Copyright: © PHU DOAN TRADING SERVICES CO., LTD. All rights reserved.",
+    "menu1": {
+      "header": "GIỚI THIỆU",
+      "item1": "Về chúng tôi",
+      "item2": "Nhân sự điều hành",
+      "item3": "Dự án tiêu biểu",
+      "item4": "Đào tạo và sinh hoạt",
+      "item5": "Đối tác - Khách hàng"
+    },
+    "menu2": {
+      "header": "DỊCH VỤ",
+      "item1": "Dịch vụ cảng biển",
+      "item2": "Dịch vụ vận tải ",
+      "item3": "Dịch vụ kho bãi",
+      "item4": "Dịch vụ hậu cần logistics",
+      "item5": "Cung cấp nguồn nhân lực"
+    },
+    "menu3": {
+      "header": "TRANG THIẾT BỊ",
+      "item1": "Thiết bị - dụng cụ",
+      "item2": "Đội xe cẩu",
+      "item3": "Đội xe nâng ",
+      "item4": "Đội xe đầu kéo",
+      "item5": "Chứng nhận dụng cụ"
+    }
+  }
 }

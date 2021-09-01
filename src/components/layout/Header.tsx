@@ -19,15 +19,31 @@ export default function Header() {
       setShowNav(true);
     }
   }, [width]);
+
   return (
-    <div className="z-50">
-      <SubHeader />
+    <div
+      className={`z-50 fixed top-0 left-0 w-full bg-body  ${
+        y > 100 && width < 1024 && !showNav
+          ? "shadow bg-opacity-80 backdrop-filter backdrop-blur-sm"
+          : ""
+      } ${
+        y > 100 && width > 1024
+          ? "shadow bg-opacity-80 backdrop-filter backdrop-blur-sm"
+          : ""
+      }`}
+    >
+      {y < 100 && <SubHeader />}
       <Container>
         <div className="flex justify-between items-center flex-wrap ">
           {/*   Left Logo */}
           <Link href="/">
             <div className="flex items-center space-x-2 cursor-pointer z-50">
-              <Image src="/assets/icon/Logo.svg" width={44} height={44} />
+              <Image
+                src="/assets/icon/Logo.svg"
+                width={44}
+                height={44}
+                alt="Phú Đoàn Logo"
+              />
               <h1 className="uppercase text-primary font-roboto font-black text-lg">
                 PHÚ ĐOÀN
               </h1>

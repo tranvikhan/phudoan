@@ -1,4 +1,89 @@
 {
-  "title": "Xin chào mừng đến với Phú Đoàn Group",
-  "demo": "Bản Demo"
+  "head": {
+    "title": "Phú Đoàn Group",
+    "description": "Công ty thương mại dịch vụ Phú Đoàn"
+  },
+  "heading": {
+    "slide1": {
+      "heading": "Chuyên nghiệp, tận tâm, tin cậy và hiệu quả",
+      "paragraph": "Cùng Khách Hàng Hướng Tới Chuỗi Dịch Vụ Logistics Hiệu Quả Nhất",
+      "button": "Hợp tác cùng chúng tôi"
+    },
+    "slide2": {
+      "heading": "Đồng hành cùng  sự phát triển của khách hàng",
+      "paragraph": "Cùng Khách Hàng Hướng Tới Chuỗi Dịch Vụ Logistics Hiệu Quả Nhất",
+      "button": "Hợp tác cùng chúng tôi"
+    },
+    "slide3": {
+      "heading": "Chất lượng dịch vụ luôn là ưu tiên hàng đầu",
+      "paragraph": "Cùng Khách Hàng Hướng Tới Chuỗi Dịch Vụ Logistics Hiệu Quả Nhất",
+      "button": "Hợp tác cùng chúng tôi"
+    }
+  },
+  "section1": {
+    "card1": {
+      "heading": "Chi phí hợp lý và hiệu quả",
+      "paragraph": "Chúng tôi cung cấp các dịch vụ với chi phí hợp lý nhất để đảm bảo lợi ích cho khách hàng."
+    },
+    "card2": {
+      "heading": "Dịch vụ cung cấp đa dạng",
+      "paragraph": "Chúng tôi luôn hiểu rõ nhu cầu của khách hàng để chủ động xây dựng các dịch vụ đa dạng và linh hoạt."
+    },
+    "card3": {
+      "heading": "Trách nhiệm cao với khách hàng",
+      "paragraph": "Chúng tôi luôn cam kết mang đến chất lượng dịch vụ tối ưu nhất dành cho khách hàng ."
+    },
+    "card4": {
+      "heading": "Thời gian thực hiện nhanh chóng",
+      "paragraph": "Chúng tôi chú trọng vào việc đăng ký cầu bến và khai thác hàng hóa cho khách hàng đúng lịch trình."
+    }
+  },
+  "section2": {
+    "subHeading": "Về chúng tôi",
+    "heading": "Đội ngũ bề dày kinh nghiệm với sự sáng tạo và tâm huyết",
+    "paragraph": "Công ty đi vào hoạt động và phát triển cùng với đội ngũ trẻ, tốt nghiệp Thạc sỹ, kỹ sư chuyên ngành: Khai thác cảng biển, kinh tế vận tải biển…",
+    "badge": "Định hướng phát triển một dịch vụ Logistics chuyên nghiệp và bền vững"
+  },
+  "section3": {
+    "subHeading": "Dịch vụ",
+    "heading": "Không ngừng đổi mới và nâng cao chất lượng dịch vụ.",
+    "paragraph1": "Luôn cải tiến áp dụng khoa học kỹ thuật về quy trình công nghệ Khai thác và xếp dỡ các loại hàng hóa, đặc biệt là hàng quá tải, quá khổ cho các công trình.",
+    "paragraph2": "Đáp ứng với nhu cầu ngày càng cao của đối tác, cùng với mục tiêu phấn đấu trở thành Công ty lớn mạnh trong lĩnh vực dịch vụ hỗ trợ hoạt động hàng hải.",
+    "button": "Tìm hiểu các dịch vụ",
+    "grid": {
+      "item1": "Dịch vụ\nCảng biển",
+      "item2": "Dịch vụ\nHậu cần Logistic",
+      "item3": "Dịch vụ\nVận tải",
+      "item4": "Dịch vụ\nKho bãi",
+      "item5": "Cung cấp\nnhân lực",
+      "item6": "Dịch vụ\nKhác"
+    }
+  },
+  "section4": {
+    "heading": "Các dự án tiêu biểu",
+    "grid": {
+      "item1": "Dự án lọc hóa dầu Long Sơn - Bà Rịa – Vũng Tàu",
+      "item2": "Dự án Khai thác du lịch biển Phú quốc – Cảng An Thới",
+      "item3": "Dự án Khai thác Xếp dỡ hàng Điện Gió Tại cảnh Quốc Tế Long An",
+      "item4": "Dự án Kho bãi ống dẫn khí Nhà máy PVcoating",
+      "item5": "Vận hành phễu Hopper than đá, tại cảng thủy nội địa Phú Mỹ",
+      "item6": "Dự án khai thác Cảng  Cảng thủy nội địa Phú Mỹ"
+    }
+  },
+  "section5": {
+    "heading": "Các hoạt động thực hiện công trình",
+    "grid": {
+      "item1": "Đóng hàng và chằng buộc trong container",
+      "item2": "Chằng buộc hàng Sắt hình, Sắt cây trong Hầm tàu.",
+      "item3": "Chằng buộc hàng Ống tháp gió trong hầm tàu & trên boong",
+      "item4": "Chằng buộc hàng ống dầu khí trong hầm tàu & trên boong",
+      "item5": "Chằng buộc hàng tôn cuộn",
+      "item6": "Chằng buộc hàng ống các loại và cọc bê tông",
+      "item7": "Hàng nông sản, hàng bao và hàng xá",
+      "item8": "Hàng Container, phế liệu, thiết bị"
+    }
+  },
+  "section6": {
+    "heading": "Được tin tưởng bởi các đối tác"
+  }
 }

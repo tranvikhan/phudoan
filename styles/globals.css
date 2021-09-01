@@ -6,6 +6,9 @@
 * {
   @apply font-sans;
 }
+html {
+  scroll-behavior: smooth;
+}
 .react-multi-carousel-dot-list {
   margin-bottom: 20px !important;
 }

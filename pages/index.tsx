@@ -1,364 +1,282 @@
 import type { NextPage } from "next";
-
-import WebHead from "../src/components/layout/WebHead";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
-import Image from "next/image";
-
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import React from "react";
+import KBadge from "../src/components/badge/KBadge";
+import KLinkButton from "../src/components/button/KLinkButton";
+import HighlighCards from "../src/components/card/HighlighCards";
+import KCard from "../src/components/card/KCard";
+import KCardCarouse from "../src/components/card/KCardCarouse";
+import KGrid from "../src/components/grid/KGrid";
+import Body from "../src/components/layout/Body";
 import Layout from "../src/components/layout/Layout";
+import WebHead from "../src/components/layout/WebHead";
+import KSpace from "../src/components/space/KSpace";
+import KHeading from "../src/components/typography/KHeading";
+import KParagraph from "../src/components/typography/KParagraph";
+import KCarousel, {
+  IKCarouselItem,
+} from "../src/components/wallpaper/KCarousel";
+
 export const getStaticProps = async ({ locale }: any) => ({
   props: {
-    ...(await serverSideTranslations(locale, ["home"])),
+    ...(await serverSideTranslations(locale, ["home", "common"])),
   },
 });
 
 const Home: NextPage = () => {
-  const { t } = useTranslation("home");
+  const home = useTranslation("home");
+
+  const carouselItems: IKCarouselItem[] = [
+    {
+      heading: home.t("heading.slide1.heading"),
+      paragraph: home.t("heading.slide1.paragraph"),
+      background: "/assets/image/wallpaper/x1440_wallpager_1.png",
+      button: {
+        text: home.t("heading.slide1.button"),
+        href: "/services",
+      },
+    },
+    {
+      heading: home.t("heading.slide2.heading"),
+      paragraph: home.t("heading.slide2.paragraph"),
+      background: "/assets/image/wallpaper/x1440_wallpager_2.png",
+      button: {
+        text: home.t("heading.slide2.button"),
+        href: "/services",
+      },
+    },
+    {
+      heading: home.t("heading.slide3.heading"),
+      paragraph: home.t("heading.slide3.paragraph"),
+      background: "/assets/image/wallpaper/x1440_wallpager_3.png",
+      button: {
+        text: home.t("heading.slide3.button"),
+        href: "/services",
+      },
+    },
+  ];
+
   return (
     <>
-      <WebHead />
+      <WebHead
+        title={home.t("head.title")}
+        description={home.t("head.description")}
+      />
       <Layout>
-        <div className="flex flex-col space-y-20 my-20">
-          <section className="grid grid-cols-2 lg:grid-cols-4">
-            <div className="px-10 pt-10 pb-16 flex flex-col items-start space-y-6 shadow-lg bg-white">
-              <Image width={60} height={60} src="/assets/icon/x50_accept.svg" />
-              <h2 className="text-header font-extrabold text-xl">
-                Chi phí hợp lý và hiệu quả
-              </h2>
-              <p className="text-text font-medium text-base flex-grow">
-                Chúng tôi cung cấp các dịch vụ với chi phí hợp lý nhất để đảm
-                bảo lợi ích cho khách hàng.
-              </p>
-            </div>
-            <div className="px-10 pt-10 pb-16 flex flex-col items-start space-y-6 shadow-lg transform -translate-x-2 z-10 bg-white">
-              <Image width={60} height={60} src="/assets/icon/x50_accept.svg" />
-              <h2 className="text-header font-extrabold text-xl">
-                Chi phí hợp lý và hiệu quả
-              </h2>
-              <p className="text-text font-medium text-base flex-grow">
-                Chúng tôi cung cấp các dịch vụ với chi phí hợp lý nhất để đảm
-                bảo lợi ích cho khách hàng.
-              </p>
-            </div>
-            <div className="px-10 pt-10 pb-16 flex flex-col items-start space-y-6 shadow-lg transform -translate-x-2 z-10 bg-white">
-              <Image width={60} height={60} src="/assets/icon/x50_accept.svg" />
-              <h2 className="text-header font-extrabold text-xl">
-                Chi phí hợp lý và hiệu quả
-              </h2>
-              <p className="text-text font-medium text-base flex-grow">
-                Chúng tôi cung cấp các dịch vụ với chi phí hợp lý nhất để đảm
-                bảo lợi ích cho khách hàng.
-              </p>
-            </div>
-            <div className="px-10 pt-10 pb-16 flex flex-col items-start space-y-6 shadow-lg transform -translate-x-2 z-10 bg-white">
-              <Image width={60} height={60} src="/assets/icon/x50_accept.svg" />
-              <h2 className="text-header font-extrabold text-xl">
-                Chi phí hợp lý và hiệu quả
-              </h2>
-              <p className="text-text font-medium text-base flex-grow">
-                Chúng tôi cung cấp các dịch vụ với chi phí hợp lý nhất để đảm
-                bảo lợi ích cho khách hàng.
-              </p>
-            </div>
-          </section>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <KCarousel items={carouselItems} />
+        <Body>
+          <HighlighCards />
+          <KGrid cols={2} gap={10}>
             <video controls loop>
               <source src="/assets/video/PhuDoanVideo.mp4" type="video/mp4" />
             </video>
-            <div className="flex flex-col space-y-6">
-              <h6 className="text-primary font-bold text-lg">VỀ CHÚNG TÔI</h6>
-              <h2 className="text-header font-extrabold text-3xl">
-                Đội ngũ bề dày kinh nghiệm với sự sáng tạo và tâm huyết
-              </h2>
-              <p className="text-text font-medium text-base flex-grow">
-                Công ty đi vào hoạt động và phát triển cùng với đội ngũ trẻ, tốt
-                nghiệp Thạc sỹ, kỹ sư chuyên ngành: Khai thác cảng biển, kinh tế
-                vận tải biển…
-              </p>
-              <div className="w-full p-10 shadow-xl text-primary font-bold text-lg border-l-4 border-primary">
-                Định hướng phát triển một dịch vụ Logistics chuyên nghiệp và bền
-                vững
-              </div>
-            </div>
-          </div>
+            <KSpace gap={5} justify="between" align="start">
+              <KSpace gap={5} align="start">
+                <KHeading size="lg" color="primary" uppercase weight="bold">
+                  {home.t("section2.subHeading")}
+                </KHeading>
+                <KHeading size="3xl">{home.t("section2.heading")}</KHeading>
+                <KParagraph>{home.t("section2.paragraph")}</KParagraph>
+              </KSpace>
+              <KBadge>{home.t("section2.badge")}</KBadge>
+            </KSpace>
+          </KGrid>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-            <div className="flex flex-col space-y-6">
-              <h6 className="text-primary font-bold text-lg">DỊCH VỤ</h6>
-              <h2 className="text-header font-extrabold text-3xl">
-                Không ngừng đổi mới và nâng cao chất lượng dịch vụ.
-              </h2>
-              <p className="text-text font-medium text-base">
-                Luôn cải tiến áp dụng khoa học kỹ thuật về quy trình công nghệ
-                Khai thác và xếp dỡ các loại hàng hóa, đặc biệt là hàng quá tải,
-                quá khổ cho các công trình.
-              </p>
-              <p className="text-text font-medium text-base">
-                Đáp ứng với nhu cầu ngày càng cao của đối tác, cùng với mục tiêu
-                phấn đấu trở thành Công ty lớn mạnh trong lĩnh vực dịch vụ hỗ
-                trợ hoạt động hàng hải.
-              </p>
-              <div className="flex">
-                <div className="text-bold text-base py-3 px-4 shadow-xl w-auto text-white bg-primary uppercase rounded">
-                  Tìm hiểu các dịch vụ
-                </div>
-              </div>
-            </div>
-            <div className="grid grid-cols-2 gap-5">
-              <div className="w-full h-40  relative">
-                <img
-                  src="/assets/image/x640_service1.png"
-                  className="object-cover h-full w-full filter brightness-75"
-                />
-                <div className="absolute top-0 w-full h-full  left-0 flex items-center justify-center uppercase font-bold text-xl text-white text-center">
-                  Dịch vụ
-                  <br /> Cảng biển
-                </div>
-              </div>
-              <div className="w-full h-40  relative">
-                <img
-                  src="/assets/image/x640_service1.png"
-                  className="object-cover h-full w-full filter brightness-75"
-                />
-                <div className="absolute top-0 w-full h-full  left-0 flex items-center justify-center uppercase font-bold text-xl text-white text-center">
-                  Dịch vụ <br />
-                  Cảng biển
-                </div>
-              </div>
-              <div className="w-full h-40  relative">
-                <img
-                  src="/assets/image/x640_service1.png"
-                  className="object-cover h-full w-full filter brightness-75"
-                />
-                <div className="absolute top-0 w-full h-full  left-0 flex items-center justify-center uppercase font-bold text-xl text-white text-center">
-                  Dịch vụ <br /> Cảng biển
-                </div>
-              </div>
-              <div className="w-full h-40  relative">
-                <img
-                  src="/assets/image/x640_service1.png"
-                  className="object-cover h-full w-full filter brightness-75"
-                />
-                <div className="absolute top-0 w-full h-full  left-0 flex items-center justify-center uppercase font-bold text-xl text-white text-center">
-                  Dịch vụ <br /> Cảng biển
-                </div>
-              </div>
-              <div className="w-full h-40  relative">
-                <img
-                  src="/assets/image/x640_service1.png"
-                  className="object-cover h-full w-full filter brightness-75"
-                />
-                <div className="absolute top-0 w-full h-full  left-0 flex items-center justify-center uppercase font-bold text-xl text-white text-center">
-                  Dịch vụ
-                  <br /> Cảng biển
-                </div>
-              </div>
-              <div className="w-full h-40  relative">
-                <img
-                  src="/assets/image/x640_service1.png"
-                  className="object-cover h-full w-full filter brightness-75"
-                />
-                <div className="absolute top-0 w-full h-full  left-0 flex items-center justify-center uppercase font-bold text-xl text-white text-center">
-                  Dịch vụ
-                  <br /> Cảng biển
-                </div>
-              </div>
-            </div>
-          </div>
+          <KGrid cols={2} gap={10}>
+            <KSpace gap={5} justify="between" align="start">
+              <KSpace gap={5} align="start">
+                <KHeading size="lg" color="primary" uppercase weight="bold">
+                  {home.t("section3.subHeading")}
+                </KHeading>
+                <KHeading size="3xl">{home.t("section3.heading")}</KHeading>
+                <KParagraph>{home.t("section3.paragraph1")}</KParagraph>
+                <KParagraph>{home.t("section3.paragraph2")}</KParagraph>
+                <KLinkButton href="/services">
+                  {home.t("section3.button")}
+                </KLinkButton>
+              </KSpace>
+            </KSpace>
+            <KGrid responsive={false} cols={2} gap={5}>
+              <KCard
+                type="overlay"
+                image="/assets/image/service/x640_service_1.png"
+                heading={home.t("section3.grid.item1")}
+              />
+              <KCard
+                type="overlay"
+                image="/assets/image/service/x640_service_2.png"
+                heading={home.t("section3.grid.item2")}
+              />
+              <KCard
+                type="overlay"
+                image="/assets/image/service/x640_service_3.png"
+                heading={home.t("section3.grid.item3")}
+              />
+              <KCard
+                type="overlay"
+                image="/assets/image/service/x640_service_4.png"
+                heading={home.t("section3.grid.item4")}
+              />
+              <KCard
+                type="overlay"
+                image="/assets/image/service/x640_service_5.png"
+                heading={home.t("section3.grid.item5")}
+              />
+              <KCard
+                type="overlay"
+                image="/assets/image/service/x640_service_6.png"
+                heading={home.t("section3.grid.item6")}
+              />
+            </KGrid>
+          </KGrid>
 
-          <section>
-            <h2 className="text-header font-extrabold text-3xl mb-8">
-              Các dự án tiêu biểu
-            </h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-              <div className="flex flex-col rounded shadow">
-                <img
-                  src="/assets/image/x640_service1.png"
-                  className="object-cover h-96 w-full rounded-tl rounded-tr"
-                />
-                <div className="p-6 font-bold text-xl">
-                  Dự án lọc hóa dầu Long Sơn - Bà Rịa – Vũng Tàu
-                </div>
-              </div>
-              <div className="flex flex-col rounded shadow">
-                <img
-                  src="/assets/image/x640_service1.png"
-                  className="object-cover h-96 w-full rounded-tl rounded-tr"
-                />
-                <div className="p-6 font-bold text-xl">
-                  Dự án lọc hóa dầu Long Sơn - Bà Rịa – Vũng Tàu
-                </div>
-              </div>
-              <div className="flex flex-col rounded shadow">
-                <img
-                  src="/assets/image/x640_service1.png"
-                  className="object-cover h-96 w-full rounded-tl rounded-tr"
-                />
-                <div className="p-6 font-bold text-xl">
-                  Dự án lọc hóa dầu Long Sơn - Bà Rịa – Vũng Tàu
-                </div>
-              </div>
-              <div className="flex flex-col rounded shadow">
-                <img
-                  src="/assets/image/x640_service1.png"
-                  className="object-cover h-96 w-full rounded-tl rounded-tr"
-                />
-                <div className="p-6 font-bold text-xl">
-                  Dự án lọc hóa dầu Long Sơn - Bà Rịa – Vũng Tàu
-                </div>
-              </div>
-              <div className="flex flex-col rounded shadow">
-                <img
-                  src="/assets/image/x640_service1.png"
-                  className="object-cover h-96 w-full rounded-tl rounded-tr"
-                />
-                <div className="p-6 font-bold text-xl">
-                  Dự án lọc hóa dầu Long Sơn - Bà Rịa – Vũng Tàu
-                </div>
-              </div>
-              <div className="flex flex-col rounded shadow">
-                <img
-                  src="/assets/image/x640_service1.png"
-                  className="object-cover h-96 w-full rounded-tl rounded-tr"
-                />
-                <div className="p-6 font-bold text-xl">
-                  Dự án lọc hóa dầu Long Sơn - Bà Rịa – Vũng Tàu
-                </div>
-              </div>
-            </div>
-          </section>
+          <KSpace gap={5} align="start">
+            <KHeading size="3xl">{home.t("section4.heading")}</KHeading>
+            <KGrid cols={2} gap={8}>
+              <KCardCarouse
+                images={[
+                  "/assets/image/project/x551_project_1_1.png",
+                  "/assets/image/project/x551_project_1_2.png",
+                  "/assets/image/project/x551_project_1_3.png",
+                ]}
+                heading={home.t("section4.grid.item1")}
+              />
+              <KCardCarouse
+                images={[
+                  "/assets/image/project/x551_project_2_1.png",
+                  "/assets/image/project/x551_project_2_2.png",
+                  "/assets/image/project/x551_project_2_3.png",
+                ]}
+                heading={home.t("section4.grid.item2")}
+              />
+              <KCardCarouse
+                images={[
+                  "/assets/image/project/x551_project_3_1.png",
+                  "/assets/image/project/x551_project_3_2.png",
+                  "/assets/image/project/x551_project_3_3.png",
+                ]}
+                heading={home.t("section4.grid.item3")}
+              />
+              <KCardCarouse
+                images={[
+                  "/assets/image/project/x551_project_4_1.png",
+                  "/assets/image/project/x551_project_4_2.png",
+                  "/assets/image/project/x551_project_4_3.png",
+                ]}
+                heading={home.t("section4.grid.item4")}
+              />
+              <KCardCarouse
+                images={[
+                  "/assets/image/project/x551_project_5_1.png",
+                  "/assets/image/project/x551_project_5_2.png",
+                  "/assets/image/project/x551_project_5_3.png",
+                ]}
+                heading={home.t("section4.grid.item5")}
+              />
+              <KCardCarouse
+                images={[
+                  "/assets/image/project/x551_project_6_1.png",
+                  "/assets/image/project/x551_project_6_2.png",
+                  "/assets/image/project/x551_project_6_3.png",
+                ]}
+                heading={home.t("section4.grid.item6")}
+              />
+            </KGrid>
+          </KSpace>
 
-          <section>
-            <h2 className="text-header font-extrabold text-3xl mb-8">
-              Các dự án tiêu biểu
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-              <div className="flex flex-col rounded shadow">
-                <img
-                  src="/assets/image/x640_service1.png"
-                  className="object-cover h-64 w-full rounded-tl rounded-tr"
-                />
-                <div className="p-6 font-bold text-xl">
-                  Dự án lọc hóa dầu Long Sơn - Bà Rịa – Vũng Tàu
-                </div>
-              </div>
-              <div className="flex flex-col rounded shadow">
-                <img
-                  src="/assets/image/x640_service1.png"
-                  className="object-cover h-64 w-full rounded-tl rounded-tr"
-                />
-                <div className="p-6 font-bold text-xl">
-                  Dự án lọc hóa dầu Long Sơn - Bà Rịa – Vũng Tàu
-                </div>
-              </div>
-              <div className="flex flex-col rounded shadow">
-                <img
-                  src="/assets/image/x640_service1.png"
-                  className="object-cover h-64 w-full rounded-tl rounded-tr"
-                />
-                <div className="p-6 font-bold text-xl">
-                  Dự án lọc hóa dầu Long Sơn - Bà Rịa – Vũng Tàu
-                </div>
-              </div>
-              <div className="flex flex-col rounded shadow">
-                <img
-                  src="/assets/image/x640_service1.png"
-                  className="object-cover h-64 w-full rounded-tl rounded-tr"
-                />
-                <div className="p-6 font-bold text-xl">
-                  Dự án lọc hóa dầu Long Sơn - Bà Rịa – Vũng Tàu
-                </div>
-              </div>
-              <div className="flex flex-col rounded shadow">
-                <img
-                  src="/assets/image/x640_service1.png"
-                  className="object-cover h-64 w-full rounded-tl rounded-tr"
-                />
-                <div className="p-6 font-bold text-xl">
-                  Dự án lọc hóa dầu Long Sơn - Bà Rịa – Vũng Tàu
-                </div>
-              </div>
-              <div className="flex flex-col rounded shadow">
-                <img
-                  src="/assets/image/x640_service1.png"
-                  className="object-cover h-64 w-full rounded-tl rounded-tr"
-                />
-                <div className="p-6 font-bold text-xl">
-                  Dự án lọc hóa dầu Long Sơn - Bà Rịa – Vũng Tàu
-                </div>
-              </div>
-            </div>
-          </section>
+          <KSpace gap={5} align="start">
+            <KHeading size="3xl">{home.t("section5.heading")}</KHeading>
+            <KGrid cols={4} gap={5}>
+              <KCard
+                type="default2"
+                image="/assets/image/activity/x640_activity_1.png"
+                heading={home.t("section5.grid.item1")}
+              />
+              <KCard
+                type="default2"
+                image="/assets/image/activity/x640_activity_2.png"
+                heading={home.t("section5.grid.item2")}
+              />
+              <KCard
+                type="default2"
+                image="/assets/image/activity/x640_activity_3.png"
+                heading={home.t("section5.grid.item3")}
+              />
+              <KCard
+                type="default2"
+                image="/assets/image/activity/x640_activity_4.png"
+                heading={home.t("section5.grid.item4")}
+              />
+              <KCard
+                type="default2"
+                image="/assets/image/activity/x640_activity_5.png"
+                heading={home.t("section5.grid.item5")}
+              />
+              <KCard
+                type="default2"
+                image="/assets/image/activity/x640_activity_6.png"
+                heading={home.t("section5.grid.item6")}
+              />
+              <KCard
+                type="default2"
+                image="/assets/image/activity/x640_activity_7.png"
+                heading={home.t("section5.grid.item7")}
+              />
+              <KCard
+                type="default2"
+                image="/assets/image/activity/x640_activity_8.png"
+                heading={home.t("section5.grid.item8")}
+              />
+            </KGrid>
+          </KSpace>
 
-          <section>
-            <h2 className="text-header font-extrabold text-3xl mb-8">
-              Các dự án tiêu biểu
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
-              <div className="flex items-center justify-center rounded shadow p-2 h-48">
-                <img
-                  src="/assets/image/customer/x172_logo_posco.png"
-                  className="object-cover h-full w-full rounded-tl rounded-tr"
-                />
-              </div>
-              <div className="flex items-center justify-center rounded shadow p-2 h-48">
-                <img
-                  src="/assets/image/customer/x172_logo_posco.png"
-                  className="object-cover h-full w-full rounded-tl rounded-tr"
-                />
-              </div>
-              <div className="flex items-center justify-center rounded shadow p-2 h-48">
-                <img
-                  src="/assets/image/customer/x172_logo_posco.png"
-                  className="object-cover h-full w-full rounded-tl rounded-tr"
-                />
-              </div>
-              <div className="flex items-center justify-center rounded shadow p-2 h-48">
-                <img
-                  src="/assets/image/customer/x172_logo_posco.png"
-                  className="object-cover h-full w-full rounded-tl rounded-tr"
-                />
-              </div>
-              <div className="flex items-center justify-center rounded shadow p-2 h-48">
-                <img
-                  src="/assets/image/customer/x172_logo_posco.png"
-                  className="object-cover h-full w-full rounded-tl rounded-tr"
-                />
-              </div>
-              <div className="flex items-center justify-center rounded shadow p-2 h-48">
-                <img
-                  src="/assets/image/customer/x172_logo_posco.png"
-                  className="object-cover h-full w-full rounded-tl rounded-tr"
-                />
-              </div>
-              <div className="flex items-center justify-center rounded shadow p-2 h-48">
-                <img
-                  src="/assets/image/customer/x172_logo_posco.png"
-                  className="object-cover h-full w-full rounded-tl rounded-tr"
-                />
-              </div>
-              <div className="flex items-center justify-center rounded shadow p-2 h-48">
-                <img
-                  src="/assets/image/customer/x172_logo_posco.png"
-                  className="object-cover h-full w-full rounded-tl rounded-tr"
-                />
-              </div>
-              <div className="flex items-center justify-center rounded shadow p-2 h-48">
-                <img
-                  src="/assets/image/customer/x172_logo_posco.png"
-                  className="object-cover h-full w-full rounded-tl rounded-tr"
-                />
-              </div>
-              <div className="flex items-center justify-center rounded shadow p-2 h-48">
-                <img
-                  src="/assets/image/customer/x172_logo_posco.png"
-                  className="object-cover h-full w-full rounded-tl rounded-tr"
-                />
-              </div>
-            </div>
-          </section>
-        </div>
+          <KSpace gap={5} align="start">
+            <KHeading size="3xl">{home.t("section6.heading")}</KHeading>
+            <KGrid cols={5} gap={5}>
+              <KCard
+                type="logo"
+                image="/assets/image/partner/x172_logo_posco.png"
+              />
+              <KCard
+                type="logo"
+                image="/assets/image/partner/x172_logo_tvp.png"
+              />
+              <KCard
+                type="logo"
+                image="/assets/image/partner/x172_logo_pv_coating.png"
+              />
+              <KCard
+                type="logo"
+                image="/assets/image/partner/x172_logo_ptsc.png"
+              />
+              <KCard
+                type="logo"
+                image="/assets/image/partner/x172_logo_tonhoasen.png"
+              />
+              <KCard
+                type="logo"
+                image="/assets/image/partner/x172_logo_sppsa.png"
+              />
+              <KCard
+                type="logo"
+                image="/assets/image/partner/x172_logo_vina_logistics.png"
+              />
+              <KCard
+                type="logo"
+                image="/assets/image/partner/x172_logo_tancang.png"
+              />
+              <KCard
+                type="logo"
+                image="/assets/image/partner/x172_logo_longan.png"
+              />
+              <KCard
+                type="logo"
+                image="/assets/image/partner/x172_logo_thivai.png"
+              />
+            </KGrid>
+          </KSpace>
+        </Body>
       </Layout>
     </>
   );

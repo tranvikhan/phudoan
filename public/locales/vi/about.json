@@ -1,0 +1,79 @@
+{
+  "head": {
+    "title": "Giới thiệu",
+    "description": "Giới thiệu - Công ty thương mại dịch vụ Phú Đoàn"
+  },
+  "heading": "Giới thiệu",
+  "section1": {
+    "badge": "Định hướng phát triển một dịch vụ Logistics chuyên nghiệp và bền vững"
+  },
+  "section2": {
+    "subHeading": "Về chúng tôi",
+    "heading": "Đội ngũ bề dày kinh nghiệm với sự sáng tạo và tâm huyết",
+    "paragraph1": "Được thành lập vào ngày 20 tháng 01 năm 2020, CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ PHÚ ĐOÀN chính thức đi vào hoạt động và phát triển cùng với đội ngũ trẻ, tốt nghiệp Thạc sỹ, kỹ sư chuyên ngành: Khai thác cảng biển, kinh tế vận tải biển… có bề dày kinh nghiệm với sự sáng tạo và tâm huyết trong nhiều lĩnh vực.",
+    "paragraph2": "Đến nay, công ty đã thiết lập được mối quan hệ thân thiết, tin cậy và hợp tác lâu dài với rất nhiều Đại lý, Chủ hàng, hệ thống dịch vụ Cảng biển tại khu vực Cái Mép - Thị Vải, tỉnh Bà Rịa - Vũng Tàu. Với định hướng phát triển một dịch vụ Logistics chuyên nghiệp và bền vững, Công ty đã cùng với Công ty Thành viên là CÔNG TY TNHH TRƯỜNG GIANG PHÚ MỸ luôn cải tiến áp dụng khoa học kỹ thuật về quy trình công nghệ Khai thác và xếp dỡ các loại hàng hóa, đặc biệt là hàng quá tải, quá khổ cho các công trình trên địa bàn tỉnh Bà Rịa - Vũng Tàu.",
+    "paragraph3": "Với định hướng phát triển chuyên nghiệp, Công ty không ngừng đổi mới, hiệu quả hóa và nâng cao chất lượng dịch vụ, phù hợp với nhu cầu ngày càng cao của đối tác, cùng với mục tiêu phấn đấu trở thành Công ty lớn mạnh trong lĩnh vực dịch vụ hỗ trợ hoạt động hàng hải. Tập trung khai thác chính các dịch vụ liên quan đến xếp dỡ hàng hoá tổng hợp, hàng siêu trường, siêu trọng theo phương án: Tàu - Xe, Xe – Bãi và ngược lại, các nhà máy công nghiệp nặng, vận tải đường bộ - thuỷ, chằng buộc hàng hóa, kiểm đếm, cung ứng các dịch vụ cảng biển và tàu biển.",
+    "card1": "Công ty Trường Giang Phú Mỹ",
+    "card2": "Công ty Sơn Lộc Phát",
+    "card3": "Chứng chỉ chất lượng"
+  },
+  "section3": {
+    "subHeading": "NHÂN SỰ ĐIỀU HÀNH",
+    "heading": "Luôn học hỏi để phát triển chuyên môn",
+    "leader1": {
+      "name": "Thạc sĩ NGUYỄN QUỐC TUẤN",
+      "position": "Giám đốc"
+    },
+    "leader2": {
+      "name": "Kỹ sư LÊ HOÀNG TÂM",
+      "position": "Phó Giám đốc Kỹ thuật"
+    },
+    "leader3": {
+      "name": "Kỹ sư NGUYỄN VĂN ĐẶNG",
+      "position": "Phó Giám đốc Kinh doanh"
+    },
+    "leader4": {
+      "name": "Cử nhân NGUYỄN XUÂN DIỆU",
+      "position": "Phó Giám đốc Tài chính"
+    },
+    "leader5": {
+      "name": "Cử nhân NGUYỄN THỊ THU HÀ",
+      "position": "Tr. phòng Hành chánh Tổng Hợp"
+    },
+    "leader6": {
+      "name": "Cử nhân PHẠM VĂN THUẬN",
+      "position": "Trưởng Phòng Kinh Doanh"
+    },
+    "leader7": {
+      "name": "Kỹ sư NGUYỄN HOÀNG MINH",
+      "position": "Trưởng Phòng Khai Thác"
+    },
+    "leader8": {
+      "name": "Kỹ sư NGUYỄN THÀNH TÀI",
+      "position": "Trưởng Ban Cơ Giới"
+    }
+  },
+  "section4": {
+    "heading": "Các dự án tiêu biểu",
+    "grid": {
+      "item1": "Dự án lọc hóa dầu Long Sơn - Bà Rịa – Vũng Tàu",
+      "item2": "Dự án Khai thác du lịch biển Phú quốc – Cảng An Thới",
+      "item3": "Dự án Khai thác Xếp dỡ hàng Điện Gió Tại cảnh Quốc Tế Long An",
+      "item4": "Dự án Kho bãi ống dẫn khí Nhà máy PVcoating",
+      "item5": "Vận hành phễu Hopper than đá, tại cảng thủy nội địa Phú Mỹ",
+      "item6": "Dự án Kho bãi ống dẫn khí Nhà máy PVcoating"
+    }
+  },
+  "section5": {
+    "heading": "Hoạt động đào tạo và sinh hoạt",
+    "grid": {
+      "item1": "Huấn luyện an toàn lao động quy trình trình xếp dỡ hàng hóa",
+      "item2": "Đào năng lực chuyên môn và nghiệp vụ",
+      "item3": "Họp định kỳ, Triển khai kế hoạch hoạt động",
+      "item4": "Tham gia các trò chơi dân gian ngoài bãi biển"
+    }
+  },
+  "section6": {
+    "heading": "Được tin tưởng bởi các đối tác"
+  }
+}

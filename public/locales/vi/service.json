@@ -1,0 +1,50 @@
+{
+  "head": {
+    "title": "Dịch Vụ",
+    "description": "Dịch Vụ - Công ty thương mại dịch vụ Phú Đoàn"
+  },
+  "heading": "Dịch Vụ",
+  "section1": {
+    "card1": {
+      "heading": "Chi phí hợp lý và hiệu quả",
+      "paragraph": "Chúng tôi cung cấp các dịch vụ với chi phí hợp lý nhất để đảm bảo lợi ích cho khách hàng."
+    },
+    "card2": {
+      "heading": "Dịch vụ cung cấp đa dạng",
+      "paragraph": "Chúng tôi luôn hiểu rõ nhu cầu của khách hàng để chủ động xây dựng các dịch vụ đa dạng và linh hoạt."
+    },
+    "card3": {
+      "heading": "Trách nhiệm cao với khách hàng",
+      "paragraph": "Chúng tôi luôn cam kết mang đến chất lượng dịch vụ tối ưu nhất dành cho khách hàng ."
+    },
+    "card4": {
+      "heading": "Thời gian thực hiện nhanh chóng",
+      "paragraph": "Chúng tôi chú trọng vào việc đăng ký cầu bến và khai thác hàng hóa cho khách hàng đúng lịch trình."
+    }
+  },
+
+  "section2": {
+    "subHeading": "Dịch vụ",
+    "heading": "Không ngừng đổi mới và nâng cao chất lượng dịch vụ.",
+    "paragraph1": "Luôn cải tiến áp dụng khoa học kỹ thuật về quy trình công nghệ Khai thác và xếp dỡ các loại hàng hóa, đặc biệt là hàng quá tải, quá khổ cho các công trình.",
+    "paragraph2": "Đáp ứng với nhu cầu ngày càng cao của đối tác, cùng với mục tiêu phấn đấu trở thành Công ty lớn mạnh trong lĩnh vực dịch vụ hỗ trợ hoạt động hàng hải."
+  },
+  "section3": "Dịch vụ cảng biển",
+  "section4": "Dịch vụ vận tải",
+  "section5": "Dịch vụ kho bãi",
+  "section6": "Dịch vụ hậu cần logistics",
+  "section7": "Cung cấp nguồn nhân lực",
+  "section8": {
+    "heading": "Các hoạt động thực hiện công trình",
+    "grid": {
+      "item1": "Đóng hàng và chằng buộc trong container",
+      "item2": "Chằng buộc hàng Sắt hình, Sắt cây trong Hầm tàu.",
+      "item3": "Chằng buộc hàng Ống tháp gió trong hầm tàu & trên boong",
+      "item4": "Chằng buộc hàng ống dầu khí trong hầm tàu & trên boong",
+      "item5": "Chằng buộc hàng tôn cuộn",
+      "item6": "Chằng buộc hàng ống các loại và cọc bê tông",
+      "item7": "Hàng nông sản, hàng bao và hàng xá",
+      "item8": "Hàng Container, phế liệu, thiết bị"
+    }
+  }
+}
