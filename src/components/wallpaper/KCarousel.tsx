@@ -1,10 +1,10 @@
-import Image from "next/image";
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import KLinkButton from "../button/KLinkButton";
 import KGrid from "../grid/KGrid";
 import Container from "../layout/Container";
+import Image from "next/image";
 
 const responsiveConfig = {
   desktop: {
@@ -60,14 +60,17 @@ const KCarouselItem = ({
   background,
 }: IKCarouselItem) => (
   <div className="relative w-full h-80 lg:h-120 flex justify-center items-center">
-    <div className="z-0 absolute top-0 left-0 h-80 lg:h-120 w-full">
-      <Image
-        src={background}
-        objectFit="cover"
-        layout="fill"
-        alt="carousel background"
-      />
-    </div>
+    <Image
+      src={background}
+      className=""
+      alt="carousel background"
+      layout="fill"
+      objectFit="cover"
+      priority
+      placeholder="blur"
+      blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkO5heDwADsgGvXBGzcQAAAABJRU5ErkJggg=="
+      objectPosition="center"
+    />
     <div className="z-10 lg:px-0 px-4">
       <Container>
         <KGrid cols={2} gap={10}>

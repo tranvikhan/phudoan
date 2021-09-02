@@ -6,7 +6,13 @@ const PhoneContact = () => {
   const common = useTranslation("common");
   return (
     <div className="flex items-center space-x-2">
-      <Image src="/assets/icon/x32_Chat.svg" width={32} height={28} />
+      <Image
+        src="/assets/icon/x32_Chat.svg"
+        width={32}
+        height={28}
+        priority
+        alt="Phone"
+      />
       <div className="flex flex-col">
         <h6 className="text-text font-semibold text-xs">
           {common.t("header.contact.header")}

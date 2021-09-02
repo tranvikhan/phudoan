@@ -17,6 +17,7 @@ export default function Footer({ content }: any) {
                 width={36}
                 height={34}
                 alt="Logo"
+                priority
               />
               <h2 className="font-bold text-base leading-snug w-1/2">
                 {common.t("footer.siteName")}
@@ -43,6 +44,9 @@ export default function Footer({ content }: any) {
                 src="/assets/icon/x150_published.png"
                 width={153}
                 height={57}
+                placeholder="blur"
+                priority
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkO5heDwADsgGvXBGzcQAAAABJRU5ErkJggg=="
                 alt="public"
               />
             </div>

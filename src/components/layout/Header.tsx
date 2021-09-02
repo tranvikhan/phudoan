@@ -42,6 +42,7 @@ export default function Header() {
                 src="/assets/icon/Logo.svg"
                 width={44}
                 height={44}
+                priority
                 alt="Phú Đoàn Logo"
               />
               <h1 className="uppercase text-primary font-roboto font-black text-lg">
@@ -66,7 +67,13 @@ export default function Header() {
               setShowNav(!showNav);
             }}
           >
-            <Image src="/assets/icon/x32_menu.svg" width={32} height={32} />
+            <Image
+              src="/assets/icon/x32_menu.svg"
+              width={32}
+              height={32}
+              priority
+              alt="Menu"
+            />
           </div>
         </div>
       </Container>

@@ -6,6 +6,7 @@ module.exports = {
     BASE_URL: "https://phudoangroup.com",
     WEB_LOGO: "https://phudoangroup.com/assets/icon/Logo.png",
     SITE_ICON: "https://phudoangroup.com/assets/icon/favicon.ico",
+    SITE_IMAGE: "https://phudoangroup.com/assets/image/favicon.ico",
     DEFAULT_LOCALE: "vi_VN",
     DEFAULT_KEY_WORDS:
       "PHÚ ĐOÀN, HÀNG HẢI, DỊCH VỤ CẢNG BIỂN, TRƯỜNG GIANG PHÚ MỸ, VŨNG TÀU, DỊCH VỤ VẬN TẢI",

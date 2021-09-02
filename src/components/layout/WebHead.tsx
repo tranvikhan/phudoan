@@ -62,7 +62,10 @@ const WebHead = (props: IProps) => {
         content={props.image ? props.image : process.env.WEB_LOGO}
       />
       <meta property="twitter:description" content={props.description} />
-
+      <meta
+        property="og:image:alt"
+        content={props.fullTitle || process.env.DEFAULT_SITE_TITLE}
+      />
       <meta property="og:url" content={process.env.BASE_URL}></meta>
     </Head>
   );

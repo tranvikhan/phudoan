@@ -10,7 +10,13 @@ const ContactItem = ({ href, icon, text, size = "large" }: any) => {
         }`}
       >
         {icon ? (
-          <Image src={icon} alt={text} width={iconSize} height={iconSize} />
+          <Image
+            src={icon}
+            alt={text}
+            width={iconSize}
+            height={iconSize}
+            priority
+          />
         ) : null}
         <span
           className={`font-semibold ${

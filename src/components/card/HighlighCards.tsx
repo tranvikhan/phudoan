@@ -14,6 +14,7 @@ export default function HighlighCards() {
         <Image
           width={60}
           height={60}
+          priority
           src="/assets/icon/x50_growth.svg"
           alt={home.t("section1.card1.heading")}
         />
@@ -32,6 +33,7 @@ export default function HighlighCards() {
         <Image
           width={60}
           height={60}
+          priority
           src="/assets/icon/x50_accept.svg"
           alt={home.t("section1.card2.heading")}
         />
@@ -50,6 +52,7 @@ export default function HighlighCards() {
         <Image
           width={60}
           height={60}
+          priority
           src="/assets/icon/x50_verified.svg"
           alt={home.t("section1.card3.heading")}
         />
@@ -68,6 +71,7 @@ export default function HighlighCards() {
         <Image
           width={60}
           height={60}
+          priority
           src="/assets/icon/x50_calendar.svg"
           alt={home.t("section1.card4.heading")}
         />

@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import Image from "next/image";
 
 interface IKCardCarouse {
   images?: string[];
@@ -35,12 +36,18 @@ export default function KCardCarouse({ images = [], heading }: IKCardCarouse) {
         autoPlaySpeed={3000}
       >
         {images.map((image, index) => (
-          <img
-            src={image ? image : ""}
-            alt={heading}
-            key={index}
-            className="object-cover xl:h-96 lg:h-80 h-60 w-full rounded-tl rounded-tr"
-          />
+          <div key={index} className="block xl:h-96 lg:h-80 h-60 w-full">
+            <Image
+              src={image ? image : ""}
+              alt={heading}
+              className="rounded-tl rounded-tr"
+              layout="fill"
+              objectFit="cover"
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkO5heDwADsgGvXBGzcQAAAABJRU5ErkJggg=="
+              objectPosition="center"
+            />
+          </div>
         ))}
       </Carousel>
       <div className="p-6 font-bold text-xl">{heading}</div>

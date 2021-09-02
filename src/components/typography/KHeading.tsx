@@ -16,15 +16,17 @@ const KHeading = ({
   id,
 }: IKHeading) => {
   return (
-    <h2
-      id={id}
-      data-aos="fade-up"
-      className={`text-${color} font-${weight} text-${size}  ${
-        uppercase ? "uppercase" : ""
-      }`}
-    >
-      {children}
-    </h2>
+    <>
+      {id ? <div id={id} className="k-author-id" /> : null}
+      <h2
+        data-aos="fade-up"
+        className={`text-${color} font-${weight} text-${size}  ${
+          uppercase ? "uppercase" : ""
+        }`}
+      >
+        {children}
+      </h2>
+    </>
   );
 };
 export default KHeading;

@@ -51,14 +51,17 @@ const Service: NextPage = () => {
             <KGrid cols={3} gap={8}>
               <KCard
                 type="image"
+                priority
                 image="/assets/image/service/x720_service_1_1.png"
               />
               <KCard
                 type="image"
+                priority
                 image="/assets/image/service/x720_service_1_2.png"
               />
               <KCard
                 type="image"
+                priority
                 image="/assets/image/service/x720_service_1_3.png"
               />
             </KGrid>
