@@ -16,4 +16,7 @@ module.exports = {
     DEFAULT_SITE_DESCRIPTION:
       "Chuyên nghiệp, tận tâm, tin cậy và hiệu quả. Cùng Khách Hàng Hướng Tới Chuỗi Dịch Vụ Logistics Hiệu Quả Nhất",
   },
+  images: {
+    domains: ["phudoangroup.com"],
+  },
 };

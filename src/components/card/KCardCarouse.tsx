@@ -42,6 +42,7 @@ export default function KCardCarouse({ images = [], heading }: IKCardCarouse) {
               alt={heading}
               className="rounded-tl rounded-tr"
               layout="fill"
+              loading="eager"
               objectFit="cover"
               placeholder="blur"
               blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkO5heDwADsgGvXBGzcQAAAABJRU5ErkJggg=="

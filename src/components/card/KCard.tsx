@@ -15,13 +15,7 @@ interface IKCard {
   paragraph?: string;
   priority?: boolean;
 }
-export default function KCard({
-  type,
-  image,
-  heading,
-  paragraph,
-  priority = false,
-}: IKCard) {
+export default function KCard({ type, image, heading, paragraph }: IKCard) {
   if (type === "overlay")
     return (
       <div className="w-full h-40 relative" data-aos="fade-up">
@@ -30,7 +24,7 @@ export default function KCard({
           alt={heading}
           layout="fill"
           objectFit="cover"
-          priority={priority}
+          loading="eager"
           placeholder="blur"
           blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkO5heDwADsgGvXBGzcQAAAABJRU5ErkJggg=="
           objectPosition="center"
@@ -88,14 +82,12 @@ export default function KCard({
     return (
       <div className="flex flex-col rounded shadow p-6" data-aos="fade-up">
         <div>
-          <Image
+          <img
             src={image ? image : ""}
             alt={heading}
             width={120}
             height={100}
-            priority={priority}
             placeholder="blur"
-            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkO5heDwADsgGvXBGzcQAAAABJRU5ErkJggg=="
           />
         </div>
 
@@ -132,7 +124,7 @@ export default function KCard({
         alt={heading}
         layout="fill"
         objectFit="cover"
-        priority={priority}
+        loading="eager"
         placeholder="blur"
         blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkO5heDwADsgGvXBGzcQAAAABJRU5ErkJggg=="
         objectPosition="center"

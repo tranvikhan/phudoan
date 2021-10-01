@@ -16,7 +16,7 @@ const KWallpaper = ({ background, text = "" }: IKWallpaper) => (
       alt="wallpaper background"
       layout="fill"
       objectFit="cover"
-      priority
+      loading="eager"
       placeholder="blur"
       blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkO5heDwADsgGvXBGzcQAAAABJRU5ErkJggg=="
       objectPosition="center"

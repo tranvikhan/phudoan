@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://phudoangroup.com/</loc>
+    <xhtml:link
+               rel="alternate"
+               hreflang="vi"
+               href="https://phudoangroup.com" />
+               
+
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="https://phudoangroup.com/en" />
+               
+  </url>
+  <url>
+    <loc>https://phudoangroup.com/about</loc>
+    <xhtml:link
+               rel="alternate"
+               hreflang="vi"
+               href="https://phudoangroup.com/about" />
+
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="https://phudoangroup.com/en/about" />
+  </url>
+  <url>
+    <loc>https://phudoangroup.com/services</loc>
+    <xhtml:link
+               rel="alternate"
+               hreflang="vi"
+               href="https://phudoangroup.com/services" />
+
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="https://phudoangroup.com/en/services" />
+  </url>
+  <url>
+    <loc>https://phudoangroup.com/facilities</loc>
+    <xhtml:link
+               rel="alternate"
+               hreflang="vi"
+               href="https://phudoangroup.com/facilities" />
+
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="https://phudoangroup.com/en/facilities" />
+  </url>
+</urlset>

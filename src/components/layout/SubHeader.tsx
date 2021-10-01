@@ -16,7 +16,7 @@ export default function SubHeader() {
           <div className="flex justify-end items-center space-x-3">
             <ContactItem
               size="small"
-              href="mailto:phudoanco@scgroup.com.vn"
+              href="mailto:phudoanco@spgroup.com.vn"
               icon="/assets/icon/x20_mail.svg"
               text={common.t("subHeader.email")}
             />

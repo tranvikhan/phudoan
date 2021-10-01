@@ -38,11 +38,10 @@ export default function Header() {
           {/*   Left Logo */}
           <Link href="/">
             <div className="flex items-center space-x-2 cursor-pointer z-50">
-              <Image
+              <img
                 src="/assets/icon/Logo.svg"
                 width={44}
                 height={44}
-                priority
                 alt="Phú Đoàn Logo"
               />
               <h1 className="uppercase text-primary font-roboto font-black text-lg">
@@ -67,11 +66,10 @@ export default function Header() {
               setShowNav(!showNav);
             }}
           >
-            <Image
+            <img
               src="/assets/icon/x32_menu.svg"
               width={32}
               height={32}
-              priority
               alt="Menu"
             />
           </div>

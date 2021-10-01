@@ -4,7 +4,7 @@ import React from "react";
 import ContactItem from "./ContactItem";
 import Container from "./Container";
 
-export default function Footer({ content }: any) {
+export default function Footer() {
   const common = useTranslation("common");
   return (
     <div className="bg-primary w-full  py-14 text-white">
@@ -12,14 +12,13 @@ export default function Footer({ content }: any) {
         <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 lg:gap-x-14 gap-x-10 gap-y-10">
           <div className="col-span-2 space-y-5">
             <div className="flex items-center space-x-4">
-              <Image
+              <img
                 src="/assets/icon/x35_logo_light.svg"
                 width={36}
                 height={34}
                 alt="Logo"
-                priority
               />
-              <h2 className="font-bold text-base leading-snug w-1/2">
+              <h2 className="font-bold text-base leading-snug lg:w-1/2 w-full">
                 {common.t("footer.siteName")}
               </h2>
             </div>
@@ -35,18 +34,15 @@ export default function Footer({ content }: any) {
               text={common.t("footer.phone")}
             />
             <ContactItem
-              href="mailto:phudoanco@scgroup.com.vn"
+              href="mailto:phudoanco@spgroup.com.vn"
               icon="/assets/icon/x20_mail.svg"
               text={common.t("footer.email")}
             />
             <div>
-              <Image
+              <img
                 src="/assets/icon/x150_published.png"
                 width={153}
                 height={57}
-                placeholder="blur"
-                priority
-                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkO5heDwADsgGvXBGzcQAAAABJRU5ErkJggg=="
                 alt="public"
               />
             </div>
