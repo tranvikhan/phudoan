@@ -36,19 +36,12 @@ export default function KCardCarouse({ images = [], heading }: IKCardCarouse) {
         autoPlaySpeed={3000}
       >
         {images.map((image, index) => (
-          <div key={index} className="block xl:h-96 lg:h-80 h-60 w-full">
-            <Image
-              src={image ? image : ""}
-              alt={heading}
-              className="rounded-tl rounded-tr"
-              layout="fill"
-              loading="eager"
-              objectFit="cover"
-              placeholder="blur"
-              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkO5heDwADsgGvXBGzcQAAAABJRU5ErkJggg=="
-              objectPosition="center"
-            />
-          </div>
+          <img
+            key={index}
+            src={image ? image : ""}
+            alt={heading}
+            className="rounded-tl rounded-tr object-cover xl:h-96 lg:h-80 h-60 w-full"
+          />
         ))}
       </Carousel>
       <div className="p-6 font-bold text-xl">{heading}</div>

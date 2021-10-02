@@ -19,15 +19,10 @@ export default function KCard({ type, image, heading, paragraph }: IKCard) {
   if (type === "overlay")
     return (
       <div className="w-full h-40 relative" data-aos="fade-up">
-        <Image
+        <img
           src={image ? image : ""}
           alt={heading}
-          layout="fill"
-          objectFit="cover"
-          loading="eager"
-          placeholder="blur"
-          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkO5heDwADsgGvXBGzcQAAAABJRU5ErkJggg=="
-          objectPosition="center"
+          className="object-cover w-full h-40"
         />
         <div className="absolute top-0 w-full h-full left-0 flex items-center justify-center uppercase font-bold text-xl text-white text-center 2xl:px-24 md:px-8 px-6">
           {heading}
@@ -103,7 +98,6 @@ export default function KCard({ type, image, heading, paragraph }: IKCard) {
           alt={heading}
           width={360}
           height={300}
-          placeholder="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkO5heDwADsgGvXBGzcQAAAABJRU5ErkJggg=="
           className="object-cover xl:h-96 lg:h-80 h-60 w-full rounded-tl rounded-tr"
         />
 
@@ -115,20 +109,11 @@ export default function KCard({ type, image, heading, paragraph }: IKCard) {
     );
   }
   return (
-    <div
-      className="w-full xl:h-64 lg:52 h-40 relative block"
+    <img
       data-aos="fade-up"
-    >
-      <Image
-        src={image ? image : ""}
-        alt={heading}
-        layout="fill"
-        objectFit="cover"
-        loading="eager"
-        placeholder="blur"
-        blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkO5heDwADsgGvXBGzcQAAAABJRU5ErkJggg=="
-        objectPosition="center"
-      />
-    </div>
+      src={image ? image : ""}
+      alt={heading}
+      className="object-cover w-full xl:h-64 lg:52 h-40"
+    />
   );
 }
